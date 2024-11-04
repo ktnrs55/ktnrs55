@@ -9,7 +9,7 @@ define(['questAPI'], function(Quest){
         noSubmit:false, //Change to true if you don't want to show the submit button.
         header: 'Questionnaire',
         decline: true,
-        declineText: isTouch ? 'Decline' : 'Decline to Answer', 
+        declineText: isTouch ? 'Decline' : '回答しない', 
         autoFocus:true, 
         progressBar:  'Page <%= pagesMeta.number %> out of 3'
     });
@@ -45,17 +45,17 @@ define(['questAPI'], function(Quest){
     API.addQuestionsSet('therm',{
         inherit: 'basicSelect',
         answers: [
-            {text:'10 - Extremely warm', value:10},
-            {text:'9 - Very warm', value:9},
-            {text:'8 - Moderately warm', value:8},
-            {text:'7 - Somewhat warm', value:7},
-            {text:'6 - Slightly warm', value:6},
-            {text:'5 - Neither warm nor cold', value:5},
-            {text:'4 - Slightly cold', value:4},
-            {text:'3 - Somewhat cold', value:3},
-            {text:'2 - Moderately cold', value:2},
-            {text:'1 - Very cold', value:1},
-            {text:'0 - Extremely cold', value:0}
+            {text:'10 - 非常に好ましい', value:10},
+            {text:'9 - とても好ましい', value:9},
+            {text:'8 - 適度に好ましい', value:8},
+            {text:'7 - まあまあ好ましい', value:7},
+            {text:'6 - 少し好ましい', value:6},
+            {text:'5 - 好ましくも好ましくなくもない', value:5},
+            {text:'4 - 少し好ましくない', value:4},
+            {text:'3 - まあまあ好ましくない', value:3},
+            {text:'2 - 適度に好ましくない', value:2},
+            {text:'1 - とても好ましくない', value:1},
+            {text:'0 - 非常に好ましくない', value:0}
         ]
     });
 
@@ -66,28 +66,28 @@ define(['questAPI'], function(Quest){
     API.addQuestionsSet('attributes7',{
         inherit : 'basicSelect',
         name: 'attributes7',
-        stem: 'Which statement best describes you?',
+        stem: 'あなたを最も良く表す言葉はどれですか？',
         answers: [
-            {text:'I strongly prefer <%= global.whiteLabels %> to <%= global.blackLabels %>.',value:7},
-            {text:'I moderately prefer <%= global.whiteLabels %> to <%= global.blackLabels %>.',value:6},
-            {text:'I slightly prefer <%= global.whiteLabels %> to <%= global.blackLabels %>.',value:5},
-            {text:'I like <%= global.whiteLabels %> and <%= global.blackLabels %> equally.',value:4},
-            {text:'I slightly prefer <%= global.blackLabels %> to <%= global.whiteLabels %>.',value:3},
-            {text:'I moderately prefer <%= global.blackLabels %> to <%= global.whiteLabels %>.',value:2},
-            {text:'I strongly prefer <%= global.blackLabels %> to <%= global.whiteLabels %>.',value:1}
+            {text:'私は非常に <%= global.whiteLabels %> を <%= global.blackLabels %> より好む.',value:7},
+            {text:'私は適度に <%= global.whiteLabels %> を <%= global.blackLabels %> より好む.',value:6},
+            {text:'私は少し  <%= global.whiteLabels %> を <%= global.blackLabels %> より好む.',value:5},
+            {text:'私は <%= global.whiteLabels %> と <%= global.blackLabels %> を同じくらい好む.',value:4},
+            {text:'私は少し <%= global.blackLabels %> を <%= global.whiteLabels %> より好む.',value:3},
+            {text:'私は適度に <%= global.blackLabels %> を <%= global.whiteLabels %> より好む.',value:2},
+            {text:'私は非常に <%= global.blackLabels %> を <%= global.whiteLabels %> より好む.',value:1}
         ]
     });
 	
     API.addQuestionsSet('thermBlack',{
         inherit : 'therm',
         name: 'Tblack_0to10',
-        stem: 'How warm or cold do you feel towards <b><%= global.blackLabels %></b>?'
+        stem: '<b><%= global.blackLabels %></b> に対して、どのくらい好ましさを感じますか?'
     });
 
     API.addQuestionsSet('thermWhite',{
         inherit : 'therm',
         name: 'Twhite_0to10',
-        stem: 'How warm or cold do you feel towards <b><%= global.whiteLabels %></b>?'
+        stem: '<b><%= global.whiteLabels %></b> に対して、どのくらい好ましさを感じますか?'
     });
 
     API.addSequence([
