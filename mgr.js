@@ -38,16 +38,21 @@ define(['managerAPI',
         whiteLabels:whiteLabels,
         //Select randomly what attribute words to see. 
         //Based on Axt, Feng, & Bar-Anan (2021).
+        //posWords : API.shuffle([
+        //    'Love', 'Cheer', 'Friend', 'Pleasure',
+        //    'Adore', 'Cheerful', 'Friendship', 'Joyful', 
+        //    'Smiling','Cherish', 'Excellent', 'Glad', 
+        //    'Joyous', 'Spectacular', 'Appealing', 'Delight', 
+         //   'Excitement', 'Laughing', 'Attractive','Delightful', 
+        //    'Fabulous', 'Glorious', 'Pleasing', 'Beautiful', 
+         //   'Fantastic', 'Happy', 'Lovely', 'Terrific', 
+         //   'Celebrate', 'Enjoy', 'Magnificent', 'Triumph'
+        //]),
+	// Select randomly what attribute words to see. 
+        //Based on Axt, Feng, & Bar-Anan (2021).
         posWords : API.shuffle([
-            'Love', 'Cheer', 'Friend', 'Pleasure',
-            'Adore', 'Cheerful', 'Friendship', 'Joyful', 
-            'Smiling','Cherish', 'Excellent', 'Glad', 
-            'Joyous', 'Spectacular', 'Appealing', 'Delight', 
-            'Excitement', 'Laughing', 'Attractive','Delightful', 
-            'Fabulous', 'Glorious', 'Pleasing', 'Beautiful', 
-            'Fantastic', 'Happy', 'Lovely', 'Terrific', 
-            'Celebrate', 'Enjoy', 'Magnificent', 'Triumph'
-        ]), 
+            '0', '1', '2', '3','4', '5', '6', '7'
+        ]),
         negWords : API.shuffle([
             'Abuse', 'Grief', 'Poison', 'Sadness', 
             'Pain', 'Despise', 'Failure', 'Nasty', 
