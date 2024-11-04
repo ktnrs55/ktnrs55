@@ -77,8 +77,8 @@ define(['managerAPI',
         raceiat_instructions: [{
             inherit: 'instructions',
             name: 'raceiat_instructions',
-            //templateUrl: 'raceiat_instructions.jst',
-	    templateUrl: 'floweriat_instructions.jst',
+            templateUrl: 'raceiat_instructions.jst',
+	    //templateUrl: 'floweriat_instructions.jst',
             title: 'IAT Instructions',
             header: 'Implicit Association Test'
         }],
@@ -92,8 +92,8 @@ define(['managerAPI',
         raceiat: [{
             type: 'time',
             name: 'raceiat',
-            //scriptUrl: 'raceiat.js'
-	    scriptUrl: 'floweriat.js'
+            scriptUrl: 'raceiat.js'
+	    //scriptUrl: 'floweriat.js'
         }],
 
         lastpage: [{
