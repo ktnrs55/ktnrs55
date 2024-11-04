@@ -92,7 +92,8 @@ define(['managerAPI',
         raceiat: [{
             type: 'time',
             name: 'raceiat',
-            scriptUrl: 'raceiat.js'
+            //scriptUrl: 'raceiat.js'
+	    scriptUrl: 'floweriat.js'
         }],
 
         lastpage: [{
