@@ -11,11 +11,11 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {image: 'bug1.png'},
-                {image: 'bug2.png'},
-                {image: 'bug3.png'},
-                {image: 'bug4.png'},
-                {image: 'but5.png'},                 
+                {image: 'bug1.jpg'},
+                {image: 'bug2.jpg'},
+                {image: 'bug3.jpg'},
+                {image: 'bug4.jpg'},
+                {image: 'but5.jpg'},                 
             ],
             //Stimulus css (style)
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
@@ -28,11 +28,11 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {image: 'flower1.png'},
-                {image: 'flower2.png'},
-                {image: 'flower3.png'},
-                {image: 'flower4.png'},
-                {image: 'flower5.png'},
+                {image: 'flower1.jpg'},
+                {image: 'flower2.jpg'},
+                {image: 'flower3.jpg'},
+                {image: 'flower4.jpg'},
+                {image: 'flower5.jpg'},
             ],
             //Stimulus css (style)
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
