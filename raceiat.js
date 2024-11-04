@@ -11,11 +11,11 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {image: 'bug1_white_resized.jpg'},
-                {image: 'bm2_nc.jpg'},
-                {image: 'bm3_nc.jpg'},
-                {image: 'bf1_nc.jpg'},
-                {image: 'bf2_nc.jpg'},                 
+                {image: 'bug1.jpg'},
+                {image: 'bug2.jpg'},
+                {image: 'bug3.jpg'},
+                {image: 'bug4.jpg'},
+                {image: 'bug5.jpg'},                 
                 {image: 'bf3_nc.jpg'}     
             ],
             //Stimulus css (style)
