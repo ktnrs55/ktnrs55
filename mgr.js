@@ -48,8 +48,6 @@ define(['managerAPI',
          //   'Fantastic', 'Happy', 'Lovely', 'Terrific', 
          //   'Celebrate', 'Enjoy', 'Magnificent', 'Triumph'
         //]),
-	// Select randomly what attribute words to see. 
-        //Based on Axt, Feng, & Bar-Anan (2021).
         posWords : API.shuffle([
             '愛', '応援', '友達', '喜び',
 	    '愛する', '陽気', '友情', '幸せな',
@@ -60,15 +58,25 @@ define(['managerAPI',
 	    '素敵', '幸せ', '愛らしい', '最高',
 	    '祝う', '楽しむ', '華麗', '勝利', 
         ]),
-        negWords : API.shuffle([
-            'Abuse', 'Grief', 'Poison', 'Sadness', 
-            'Pain', 'Despise', 'Failure', 'Nasty', 
-            'Angry', 'Detest', 'Horrible', 'Negative', 
-            'Ugly', 'Dirty', 'Gross', 'Evil', 
-            'Rotten','Annoy', 'Disaster', 'Horrific',  
-            'Scorn', 'Awful', 'Disgust', 'Hate', 
-            'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
-            'Hatred', 'Hurtful', 'Sickening', 'Yucky'
+        //negWords : API.shuffle([
+        //    'Abuse', 'Grief', 'Poison', 'Sadness', 
+        //    'Pain', 'Despise', 'Failure', 'Nasty', 
+        //    'Angry', 'Detest', 'Horrible', 'Negative', 
+        //    'Ugly', 'Dirty', 'Gross', 'Evil', 
+         //   'Rotten','Annoy', 'Disaster', 'Horrific',  
+         //   'Scorn', 'Awful', 'Disgust', 'Hate', 
+         //   'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
+         //   'Hatred', 'Hurtful', 'Sickening', 'Yucky'
+        //])
+	negWords : API.shuffle([
+            '虐待', '悲しみ', '毒', '悲しさ', 
+            '痛み', '軽蔑', '失敗', '嫌な', 
+            '怒っている', '嫌悪する', '恐ろしい', '否定的', 
+            '醜い', '汚い', '不快な', '悪', 
+            '腐った', 'イライラさせる', '災害', '恐ろしい',  
+            '軽蔑', 'ひどい', '嫌悪', '嫌う', 
+            '屈辱を与える', '自己中心的', '悲劇的', '面倒な', 
+            '憎しみ', '傷つける', '吐き気を催す', '気持ち悪い',
         ])
     });
 
