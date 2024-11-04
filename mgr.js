@@ -11,7 +11,6 @@ define(['managerAPI',
 	//const subid = Date.now().toString(16)+Math.floor(Math.random()*10000).toString(16);
 		    //init_data_pipe(API, 'zpjKaPesdEOI',  {file_type:'csv'});
 		    init_data_pipe(API,   'lnDGF04rqEz7',  {file_type:'csv'});
-		    //init_data_pipe(API,   'race_iat_en',  {file_type:'csv'});
 		    
 
     API.setName('mgr');
@@ -78,7 +77,8 @@ define(['managerAPI',
         raceiat_instructions: [{
             inherit: 'instructions',
             name: 'raceiat_instructions',
-            templateUrl: 'raceiat_instructions.jst',
+            //templateUrl: 'raceiat_instructions.jst',
+	    templateUrl: 'floweriat_instructions.jst',
             title: 'IAT Instructions',
             header: 'Implicit Association Test'
         }],
