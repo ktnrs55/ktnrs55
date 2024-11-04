@@ -51,7 +51,7 @@ define(['managerAPI',
 	// Select randomly what attribute words to see. 
         //Based on Axt, Feng, & Bar-Anan (2021).
         posWords : API.shuffle([
-            '0', '1', '2', '3','4', '5', '6', '7'
+            '愛', '1', '2', '3','4', '5', '6', '7'
         ]),
         negWords : API.shuffle([
             'Abuse', 'Grief', 'Poison', 'Sadness', 
