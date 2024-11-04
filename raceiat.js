@@ -16,7 +16,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {image: 'bug3.jpg'},
                 {image: 'bug4.jpg'},
                 {image: 'bug5.jpg'},                 
-                {image: 'bf3_nc.jpg'}     
+                {image: 'bug6.jpg'}     
             ],
             //Stimulus css (style)
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
