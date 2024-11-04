@@ -51,7 +51,14 @@ define(['managerAPI',
 	// Select randomly what attribute words to see. 
         //Based on Axt, Feng, & Bar-Anan (2021).
         posWords : API.shuffle([
-            '愛', '1', '2', '3','4', '5', '6', '7'
+            '愛', '応援', '友達', '喜び',
+	    '愛する', '陽気', '友情', '幸せな',
+	    '笑顔', '大切にする', '優れた', '嬉しい',
+	    '喜ばしい', '壮大な', '魅力的な', '喜び',
+	    '興奮', '笑っている', '魅力的な', '楽しい',
+	    '素晴らしい', '輝かしい', '心地よい', '美しい',
+	    '素敵', '幸せ', '愛らしい', '最高',
+	    '祝う', '楽しむ', '華麗', '勝利', 
         ]),
         negWords : API.shuffle([
             'Abuse', 'Grief', 'Poison', 'Sadness', 
